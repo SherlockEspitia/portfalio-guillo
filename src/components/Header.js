@@ -1,13 +1,39 @@
-import {EmailIcon} from '../icons/Email.js'
+/*import { EmailIcon } from '../icons/Email.js'
 import { TelephoneIcon } from '../icons/Telephone.js'
 
 function InfoIcon({children}){
     return <span className='pe-1'>
         {children}
     </span>
-}
+}*/
+import { Nav, Navbar } from "react-bootstrap"
+
 export default function Header(){
-    return (
+    return(
+        <header className="w-100 bg-primary">
+            <Navbar expand="lg" className="px-4 text-white d-flex justify-content-between">
+                <Nav className="d-flex flex-column justify-content-start flex-shrink-1 mx-0 object-fit-contain">
+                    <Navbar.Brand className="text-white">
+                        Sherlock Espitia
+                    </Navbar.Brand>
+                    <Navbar.Brand className="fs-6 py-0 text-white">
+                        📞3124567890
+                    </Navbar.Brand>
+                    <Navbar.Brand className="fs-6 py-0 text-white">
+                        📧example@mail.com
+                    </Navbar.Brand>
+                </Nav>
+                <Nav className="w-100 justify-content-end">
+                    <Nav.Link className="text-white" href="about">Acerca de Mi</Nav.Link>
+                    <Nav.Link className="text-white" href="skills">Habilidades</Nav.Link>
+                    <Nav.Link className="text-white" href="projects">Proyectos</Nav.Link>
+                    <Nav.Link className="text-white" href="recomendatios">Recomendaciones</Nav.Link>
+                </Nav>
+            </Navbar>
+        </header>
+
+    )
+    /*return (
         <header className="w-100">
             <nav className="navbar container-fluid object-fit-contain bg-primary px-4">
                 <div className="d-flex flex-column ml-2 pt-2">
@@ -34,5 +60,5 @@ export default function Header(){
                 </div>
             </nav>
         </header>
-    )
+    )*/
 }
