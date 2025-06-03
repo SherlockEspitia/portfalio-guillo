@@ -13,7 +13,7 @@ export default function About(){
         <Row className="w-100 pt-5">
             <Col className="ps-0" lg="2" ><PersonImage/></Col>
             <Col className="ps-4 ms-5">
-                <h2>
+                <h2 className="text-primary fw-bold">
                     Hola, soy Sherlock Espitia! 👋🏼
                 </h2>
                 <p>
