@@ -1,4 +1,4 @@
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col, Card, Form, Button } from "react-bootstrap";
 
 const recommendations = [
     {id:1, title:"", 
@@ -21,16 +21,18 @@ const recommendations = [
 ]
 
 function RecommendationsCard({title, text}){
-    return <Card>
-        <Card.Body>
+    return (
+    <Card style={{height:"150px"}}>
+        <Card.Body className="overflow-y-auto">
             <Card.Title>
                 {title}
             </Card.Title>
-            <Card.Text>
+            <Card.Text className="fst-italic">
                 {text}
             </Card.Text>
         </Card.Body>
     </Card>
+    )
 }
 
 export default function Recommendations(){
@@ -41,12 +43,26 @@ export default function Recommendations(){
                 Recomendaciones
             </h3>
         </Row>
-        <Row className="w-100 container-fluid d-flex justify-content-between flex-wrap">
+        <Row className="w-100 d-flex justify-content-between flex-wrap mb-4 pb-3 object-fit-content" style={{height:"200px"}}>
             {recommendations.map((r)=>{
-                return <Col lg={4} key={r.id}>
+                return <Col lg={4} key={r.id} style={{height:"170px"}}>
                     <RecommendationsCard title={r.title} text={r.text}/>
                 </Col>
             })}
+        </Row>
+        <Row className="w-75 text-center mx-auto mt-4">
+            <h4>Envia una recomendacion</h4>
+            <Form>
+                <Form.Group controlId="rName" className="mb-3">
+                    <Form.Control type='text' placeholder="Nombre (optional)"/>                
+                </Form.Group>
+                <Form.Group controlId="rMessage" className="mb-4">
+                    <Form.Control as="textarea" rows={4} placeholder="Mensanje"/>
+                </Form.Group>
+                <Button variant="outline-primary" type="submit" className="mb-5 fw-bold">
+                    Enviar
+                </Button>
+            </Form>
         </Row>
         </>
     )
