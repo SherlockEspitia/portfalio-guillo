@@ -15,6 +15,7 @@ export default function Header(){
                         📧example@mail.com
                     </Navbar.Brand>
                 </Nav>
+                <Navbar.Toggle aria-controls="smContent" className="text-white"/>
                 <Navbar.Collapse id="smContent" >
                     <Nav className="w-100 justify-content-end" smContent>
                         <Nav.Link className="text-white" href="#about">Acerca de Mi</Nav.Link>
