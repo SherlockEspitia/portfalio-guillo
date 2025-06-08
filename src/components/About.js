@@ -10,7 +10,7 @@ function PersonImage(){
 
 export default function About(){
     return(
-        <Row className="w-100 pt-5">
+        <Row className="w-100 pt-5" id="about">
             <Col className="ps-0" lg="2" ><PersonImage/></Col>
             <Col className="ps-4 ms-5">
                 <h2 className="text-primary fw-bold">

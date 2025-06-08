@@ -24,10 +24,10 @@ export default function Header(){
                     </Navbar.Brand>
                 </Nav>
                 <Nav className="w-100 justify-content-end">
-                    <Nav.Link className="text-white" href="about">Acerca de Mi</Nav.Link>
-                    <Nav.Link className="text-white" href="skills">Habilidades</Nav.Link>
-                    <Nav.Link className="text-white" href="projects">Proyectos</Nav.Link>
-                    <Nav.Link className="text-white" href="recomendatios">Recomendaciones</Nav.Link>
+                    <Nav.Link className="text-white" href="#about">Acerca de Mi</Nav.Link>
+                    <Nav.Link className="text-white" href="#skills">Habilidades</Nav.Link>
+                    <Nav.Link className="text-white" href="#projects">Proyectos</Nav.Link>
+                    <Nav.Link className="text-white" href="#recommendations">Recomendaciones</Nav.Link>
                 </Nav>
             </Navbar>
         </header>

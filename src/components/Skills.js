@@ -37,7 +37,7 @@ function SkillCard({imgLogo, skillName, yearsExperience }){
 
 export default function Skills(){
     return(
-        <>
+        <section id="skills">
         <Row className="w-100 mt-4">
             <h3 className="text-primary fw-bold">Habilidades</h3>
         </Row>
@@ -50,6 +50,6 @@ export default function Skills(){
                 />
             })}
         </Row>
-        </>
+        </section>
     )
 }

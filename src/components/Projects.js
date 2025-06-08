@@ -14,7 +14,7 @@ function ProjectItem({title, children}){
 
 export default function Projects(){
     return (
-        <Row className="w-100 my-2">
+        <Row className="w-100 my-2" id="projects">
             <h3 className="text-primary fw-bold">
                 Proyectos
             </h3>

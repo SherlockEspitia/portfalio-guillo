@@ -37,7 +37,7 @@ function RecommendationsCard({title, text}){
 
 export default function Recommendations(){
     return(
-        <>
+        <section id="recommendations">
         <Row className="w-100">
             <h3 className="text-primary fw-bold">
                 Recomendaciones
@@ -64,6 +64,6 @@ export default function Recommendations(){
                 </Button>
             </Form>
         </Row>
-        </>
+        </section>
     )
 }
